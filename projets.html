@@ -1,15 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projets d'application mobiles, de sites internet de Leïla SIMON développeuse web Front-end">
+    <meta name="description"
+        content="Projets d'application mobiles, de sites internet de Leïla SIMON développeuse web Front-end">
     <title>Leïla SIMON : projets</title>
     <link rel="stylesheet" href="./style.css">
+    <!--Lien avec FontAwesome-->
+    <script src="https://kit.fontawesome.com/8276700845.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-
-    <script src="./app.js"></script>
+<body class="projets backgroundMouchete">
+    <header class="flex justifyBetween alignCenter">
+        <a href="./index.html"><img src="./images/Logo-Leila-SIMON-developpeur-web-2.png"
+                alt="Logo Leïla Simon Développeuse web"></a>
+        <!--Barre de navigation-->
+        <nav class="navBar width40">
+            <ul class="flex justifyBetween">
+                <li><a href="./index.html" title="Leïla Simon Accueil">Accueil</a></li>
+                <li><a href="./projets.html" title="Leïla Simon Projets">Projets</a></li>
+                <li><a href="./apropos.html" title="Leïla Simon À  propos">À propos</a></li>
+                <li><a href="./contact.html" title="Leïla Simon Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- "Hamburger menu" / "Bar icon"-->
+        <div>
+            <div class="background">
+                <button class="menu__icon" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Barre de navigation cachée par défaut qui apparait quand on clique sur le Menu Burger-->
+    <nav id="navBarBurger" class="nav-close padLeft30">
+        <ul>
+            <li><a href="./index.html" title="Leïla Simon | Accueil">Accueil</a></li>
+            <li><a href="./projets.html" title="Leïla Simon | Projets">Projets</a></li>
+            <li><a href="./apropos.html" title="Leïla Simon | A propos">A propos</a></li>
+            <li><a href="./contact.html" title="Leïla Simon | Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="flex">
+        <div class="carouselProjet width50 marginTop150 flex">
+            <div class="carouselSlides">
+                <!--MNTN-->
+                <div class="carouselItem itemActive static" id="img-mntn">
+                    <img src="./images/apercu-site_MNTN_Leila_SIMON.png" alt="Site MNTN par Leïla SIMON"
+                        class="responsive">
+                </div>
+                <!--4 Elements-->
+                <div class="carouselItem" id="img-elements">
+                    <img src="./images/apercu-site_4-Elements_Leila_SIMON.png"
+                        alt="Site Hôtels 4 Elements par Leïla SIMON" class="responsive">
+                </div>
+                <!--Dehors-->
+                <div class="carouselItem" id="img-dehors">
+                    <img src="./images/apercu-site_Dehors_Leila_SIMON.png" alt="Site Dehors ! par Leïla SIMON"
+                        class="responsive">
+                </div>
+                <!--MN'S-->
+                <div class="carouselItem" id="img-mS">
+                    <img src="./images/apercu-site_M-S_Leila_SIMON.png" alt="Site M'S par Leïla SIMON"
+                        class="responsive">
+                </div>
+                <!--Trippin-->
+                <div class="carouselItem flex" id="img-trippin">
+                    <img src="./images/Trippin_Leïla-SIMON.png" alt="Application mobile Trippin' par Leïla SIMON"
+                        class="responsive">
+                </div>
+                <!--Interno-->
+                <div class="carouselItem" id="img-interno">
+                    <img src="./images/apercu-site_Interno_Leila_SIMON.png" alt="Site Interno par Leïla SIMON"
+                        class="responsive">
+                </div>
+                <!--Moo-vi-zy-->
+                <div class="carouselItem flex" id="img-mooViZy">
+                    <img src="./images/Moo-vi-zy_Leïla-SIMON.png" alt="Application mobile Moo-vi-zy par Leïla SIMON"
+                        class="responsive">
+                </div>
+                <!--La Ruche-->
+                <div class="carouselItem" id="img-laRuche">
+                    <img src="./images/apercu-site_La-Ruche_Leila_SIMON.png" alt="Site La Ruche par Leïla SIMON"
+                        class="responsive">
+                </div>
+                <!--Banana Academy-->
+                <div class="carouselItem" id="img-bananaAcademy">
+                    <img src="./images/apercu-site_Banana-Academy_Leila-SIMON.png"
+                        alt="Site Banana Academy par Leïla SIMON" class="responsive">
+                </div>
+            </div>
+        </div>
+        <section class="containerIntitules width50 marginTop150">
+            <h2>Projets</h2>
+            <!--
+            <div class="intitulesProjets" id="mntn">
+                <a href="projetLeilaSimon.html?ref=" title="" class="width70 borderBottom flex justifyBetween alignCenter">
+                    <h3>MNTN</h3>
+                    <p>Site internet</p>
+                </a>
+            </div>
+            <div class="intitulesProjets" id="elements">
+                <a href="projetLeilaSimon.html?ref=" title="" class="width70 borderBottom flex justifyBetween alignCenter">
+                    <h3>Hôtels 4 éléments</h3>
+                    <p>Site internet</p>
+                </a>
+            </div>
+            <div class="intitulesProjets" id="dehors">
+                <a href="projetLeilaSimon.html?ref=" title="" class="width70 borderBottom flex justifyBetween alignCenter">
+                    <h3>Dehors !</h3>
+                    <p>Site internet</p>
+                </a>
+            </div>
+            <div class="intitulesProjets" id="mS">
+                <a href="projetLeilaSimon.html?ref=" title="" class="width70 borderBottom flex justifyBetween alignCenter">
+                    <h3>M'S</h3>
+                    <p>Site internet</p>
+                </a>
+            </div>
+            <div class="intitulesProjets" id="trippin">
+                <a href="projetLeilaSimon.html?ref=" title="" class="width70 borderBottom flex justifyBetween alignCenter">
+                    <h3>Trippin'</h3>
+                    <p>Application mobile</p>
+                </a>
+            </div>
+            <div class="intitulesProjets" id="interno">
+                <a href="projetLeilaSimon.html?ref=" title="" class="width70 borderBottom flex justifyBetween alignCenter">
+                    <h3>Interno</h3>
+                    <p>Site internet</p>
+                </a>
+            </div>
+            <div class="intitulesProjets" id="mooViZy">
+                <a href="projetLeilaSimon.html?ref=" title="" class="width70 borderBottom flex justifyBetween alignCenter">
+                    <h3>Moo-viz-y</h3>
+                    <p>Application mobile</p>
+                </a>
+            </div>
+            <div class="intitulesProjets" id="laRuche">
+                <a href="projetLeilaSimon.html?ref=" title="" class="width70 borderBottom flex justifyBetween alignCenter">
+                    <h3>La Ruche</h3>
+                    <p>Site internet</p>
+                </a>
+            </div>
+            <div class="intitulesProjets" id="bananaAcademy">
+                <a href="projetLeilaSimon.html?ref=" title="" class="width70 borderBottom flex justifyBetween alignCenter">
+                    <h3>Banana Academy</h3>
+                    <p>Site internet farfelu</p>
+                </a>
+            </div>
+            -->
+        </section>
+        <div class="lumiere"></div>
+    </main>
+     <!--Liens vers les scripts JS-->
+     <script src="./survolSouris.js" defer></script>
+     <script src="./menuBurger.js" defer></script>
+     <script src="./app.js" defer></script>
+     <script src="./carousel.js" defer></script>
 </body>
+
 </html>

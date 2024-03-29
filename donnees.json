@@ -1,0 +1,195 @@
+[
+    {
+        "reference": "mntn",
+        "nom": "MNTN",
+        "pourQui": "Formation Webecom",
+        "annee": 2024,
+        "categorie": "Site internet",
+        "description": "",
+        "contexte": "",
+        "photoApercu" :"apercu-site_MNTN_Leila_SIMON.png",
+        "photo": "site_MNTN_Leila_SIMON.png",
+        "badge": [
+            {
+                "texte": "HTML",
+                "classe": "badgeHTML"
+            },
+            {
+                "texte": "CSS",
+                "classe": "badgeCSS"
+            }
+        ]
+    },
+    {
+        "reference": "elements",
+        "nom": "Hôtels 4 éléments",
+        "pourQui": "Formation Webecom",
+        "annee": 2024,
+        "categorie": "Site internet",
+        "description": "",
+        "contexte": "",
+        "photoApercu" :"apercu-site_4-Elements_Leila_SIMON.png",
+        "photo": "site_4-Elements_Leila_SIMON.png",
+        "badge": [
+            {
+                "texte": "HTML",
+                "classe": "badgeHTML"
+            },
+            {
+                "texte": "CSS",
+                "classe": "badgeCSS"
+            }
+        ]
+    },
+    {
+        "reference": "dehors",
+        "nom": "Dehors !",
+        "pourQui": "Formation Webecom",
+        "annee": 2024,
+        "categorie": "Site internet",
+        "description": "",
+        "contexte": "",
+        "photoApercu" :"apercu-site_Dehors_Leila_SIMON.png",
+        "photo": "site_Dehors_Leila_SIMON.png",
+        "badge": [
+            {
+                "texte": "HTML",
+                "classe": "badgeHTML"
+            },
+            {
+                "texte": "CSS",
+                "classe": "badgeCSS"
+            },
+            {
+                "texte": "JS",
+                "classe": "badgeJS"
+            }
+        ]
+    },
+    {
+        "reference": "mS",
+        "nom": "M'S",
+        "pourQui": "Formation Webecom",
+        "annee": 2024,
+        "categorie": "Site internet",
+        "description": "M'S est une boutique fondée en 1993 spécialisée dans les vêtements, chaussures et équipements divers de sport pour hommes. Leur objectif est de fournir le meilleur pour la pratique des activités sportives en intérieur comme en extérieur. M'S travaille avec les plus grandes marques et dispose de leurs propres ateliers de fabrication. Parmi les nouveautés issues de leur pole recherche et développement, les produits de la gamme @utdoor pour les activités de plein air, qui allient confort, respirabilité et protection grâce à leurs matériaux à la pointe de la technologie textile.",
+        "contexte": "Il m'a été demandé de développer le site imaginé par le designer dans le respect du design système de la marque, d'effectuer le référencement naturel. Le site devait bien sur pouvoir être affiché sur tous supports. ",
+        "photoApercu" :"apercu-site_M-S_Leila_SIMON.png",
+        "photo": "site_M-S_Leila_SIMON.png",
+        "badge": [
+            {
+                "texte": "HTML",
+                "classe": "badgeHTML"
+            },
+            {
+                "texte": "CSS",
+                "classe": "badgeCSS"
+            },
+            {
+                "texte": "JS",
+                "classe": "badgeJS"
+            },
+            {
+                "texte": "Ainmation",
+                "classe": "badgeAnimation"
+            }
+        ]
+    },
+    {
+        "reference": "trippin",
+        "nom": "Trippin'",
+        "pourQui": "Formation La Toile - EmLyon",
+        "annee": 2023,
+        "categorie": "Application mobile",
+        "description": "",
+        "contexte": "",
+        "photoApercu" :"Trippin_Leïla-SIMON.png",
+        "photo": "Trippin_Leïla-SIMON.png",
+        "badge": [
+            {
+                "texte": "FIGMA",
+                "classe": "badgeFigma"
+            }
+        ]
+    },
+    {
+        "reference": "interno",
+        "nom": "Interno",
+        "pourQui": "Formation Webecom",
+        "annee": 2024,
+        "categorie": "Site internet",
+        "description": "",
+        "contexte": "",
+        "photoApercu" :"apercu-site_Interno_Leila_SIMON.png",
+        "photo": "site_Interno_Leila_SIMON.png",
+        "badge": [
+            {
+                "texte": "HTML",
+                "classe": "badgeHTML"
+            },
+            {
+                "texte": "CSS",
+                "classe": "badgeCSS"
+            }
+        ]
+    },
+    {
+        "reference": "mooViZy",
+        "nom": "Moo-vi-zy",
+        "pourQui": "Formation Webecom",
+        "annee": 2024,
+        "categorie": "Application mobile",
+        "description": "",
+        "contexte": "",
+        "photoApercu" :"Moo-vi-zy_Leïla-SIMON.png",
+        "photo": "Moo-vi-zy_Leïla-SIMON.png",
+        "badge": [
+            {
+                "texte": "FIGMA",
+                "classe": "badgeFigma"
+            }
+        ]
+    },
+    {
+        "reference": "laRuche",
+        "nom": "La Ruche",
+        "pourQui": "Formation Webecom",
+        "annee": 2024,
+        "categorie": "Application mobile",
+        "description": "",
+        "contexte": "",
+        "photoApercu" :"apercu-site_La-Ruche_Leila_SIMON.png",
+        "photo": "site_La-Ruche_Leila_SIMON.png",
+        "badge": [
+            {
+                "texte": "HTML",
+                "classe": "badgeHTML"
+            },
+            {
+                "texte": "CSS",
+                "classe": "badgeCSS"
+            }
+        ]
+    },
+    {
+        "reference": "bananaAcademy",
+        "nom": "Banana Academy",
+        "pourQui": "Formation Webecom",
+        "annee": 2024,
+        "categorie": "Site internet farfelu",
+        "description": "",
+        "contexte": "",
+        "photoApercu" :"apercu-site_Banana-Academy_Leila_SIMON.png",
+        "photo": "site_Banana-Academy_Leila-SIMON.png",
+        "badge": [
+            {
+                "texte": "HTML",
+                "classe": "badgeHTML"
+            },
+            {
+                "texte": "CSS",
+                "classe": "badgeCSS"
+            }
+        ]
+    }
+]

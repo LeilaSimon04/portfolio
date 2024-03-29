@@ -6,10 +6,56 @@
     <meta name="description" content="Contact de Leïla SIMON développeuse web Front-end">
     <title>Leïla SIMON : contact</title>
     <link rel="stylesheet" href="./style.css">
+    <!--Lien avec FontAwesome-->
+    <script src="https://kit.fontawesome.com/8276700845.js" crossorigin="anonymous"></script>
 </head>
-<body class="contact">
-    <h2>Leïla Simon</h2>
-
+<body class="contact backgroundMouchete">
+    <header class="flex justifyBetween alignCenter">
+        <a href="./index.html"><img src="./images/Logo-Leila-SIMON-developpeur-web.png" alt="Logo Leïla Simon Développeuse web"></a>
+        <!--Barre de navigation-->
+        <nav class="navBar width40">
+            <ul class="flex justifyBetween">
+                <li><a href="./index.html" title="Leïla Simon Accueil">Accueil</a></li>
+                <li><a href="./projets.html" title="Leïla Simon Projets">Projets</a></li>
+                <li><a href="./apropos.html" title="Leïla Simon À  propos">À propos</a></li>
+                <li><a href="./contact.html" title="Leïla Simon Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- "Hamburger menu" / "Bar icon"-->
+        <div>
+            <div class="background">
+                <button class="menu__icon" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                </button>
+            </div>
+        </div> 
+    </header>
+    <!-- Barre de navigation cachée par défaut qui apparait quand on clique sur le Menu Burger-->
+    <nav id="navBarBurger" class="nav-close padLeft30">
+        <ul>
+            <li><a href="./index.html" title="Leïla Simon | Accueil">Accueil</a></li>
+            <li><a href="./projets.html" title="Leïla Simon | Projets">Projets</a></li>
+            <li><a href="./apropos.html" title="Leïla Simon | A propos">A propos</a></li>
+            <li><a href="./contact.html" title="Leïla Simon | Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="contacts width50 marginAuto">
+            <h2>Leïla Simon <span class="rose">·</span> Développeuse web</h2>
+            <h4>N'hésitez pas à me contacter</h4>
+            <address class="flex">
+                <a href="tel:+33607401548"><i class="fa-solid fa-phone"></i>+33 06 07 40 15 48</a>
+                <a href="mailto:leilasimon4@gmail.com"><i class="fa-regular fa-envelope"></i>leilasimon4@gmail.com</a>
+            </address>
+            <div class="reseauxSociaux">
+                <a href=""><img src="./images/icons8-linkedin-48.png" alt="Logo Linkedin"></a>
+                <a href=""><img src="./images/icons8-instagram-48.png" alt="logo Instagram"></a>
+            </div>
+        </div>
+        <div class="lumiere"></div>
+    </main>
     <script src="./app.js"></script>
 </body>
 </html>

@@ -1,101 +1,582 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --couleurRose : #FF01F5;
-    --couleurBleu : #52CCBC;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --couleurRose: #FF01F5;
+    --couleurBleu: #52CCBC;
     --couleurBleuFonce: #080A16;
+    --couleurAntiquewhite: antiquewhite;
+    --couleurBlancAntiquewhite: rgb(250, 238, 222);
+    --couleurAliceBlue: aliceblue;
+    --radius: 8px;
 }
-h1{color: antiquewhite;}
-a{
+
+.rose {
+    color: var(--couleurRose);
+    filter: blur(2px);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+li {
+    font-family: 'rubik', 'sans serif';
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--couleurAntiquewhite);
+    padding: 30px 0;
+}
+
+h3 {
+    font-size: 30px;
+    color: var(--couleurBlancAntiquewhite);
+}
+
+h4 {
+    font-size: 20px;
+    color: var(--couleurBlancAntiquewhite);
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+p {
+    color: var(--couleurAliceBlue);
+    line-height: 30px;
+}
+
+a {
     text-decoration: none;
     color: var(--couleurBleu);
 }
-a:hover{
-    color: antiquewhite;
+
+a:hover {
+    color: var(--couleurAntiquewhite);
 }
+
+li {
+    list-style-type: none;
+}
+
+.brCache {
+    display: none;
+}
+
+/* Text align-center */
+.textCenter {
+    text-align: center;
+}
+
+/* Pour les Images */
+.responsive {
+    width: 100%;
+}
+
+.backgroundMouchete {
+    background-image: url(./images/fond-mouchete-leila-simon-developpeuse-web.jpg);
+    background-size: 50%;
+    background-position: center;
+}
+
+/* DISPLAY NONE */
+.d-none {
+    display: none;
+}
+
+/* FLEXBOX */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.justifyEnd {
+    justify-content: flex-end;
+}
+
+.justifyBetween {
+    justify-content: space-between;
+}
+
+.justifyAround {
+    justify-content: space-around;
+}
+
 /* CONTAINERS et TAILLES*/
 .container-1200 {
-    width:100%;
+    width: 100%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
-/* PAGE HOME   PAGE HOME  PAGE HOME   PAGE HOME   PAGE HOME   PAGE HOME  PAGE HOME   PAGE HOME */
-/* Body page HOME */
-.home{
-    height: 100vh;
-    background-image: url(./images/Frame\ 1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+.width5 {
+    width: 5%;
 }
-.accrocheAccueil{
+
+.width10 {
+    width: 10%;
+}
+
+.width12 {
+    width: 12%;
+}
+
+.width15 {
+    width: 15%;
+}
+
+.width20 {
+    width: 20%;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.width40 {
+    width: 40%;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.width55 {
+    width: 55%;
+}
+
+.width60 {
+    width: 60%;
+}
+
+.width70 {
     width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 200px;
+}
+
+.width80 {
+    width: 80%;
+}
+
+.width90 {
+    width: 90%;
+}
+
+.width100 {
+    width: 100%;
+}
+
+/* Margin Padding */
+.marginAuto {
     margin-left: auto;
     margin-right: auto;
-    /*position: relative;
-    top: 200px;
-    left: 300px;*/
 }
-/* HEADER */
+
+.marginTop150 {
+    margin-top: 150px;
+}
+
+.padding20 {
+    padding: 20px 0;
+}
+
+.padLeft30 {
+    padding-left: 30px;
+}
+
+/* Border */
+.borderBottom {
+    border-bottom: 1px solid #1e302d;
+}
+
+/* BADGES des langages et techniques utilisés */
+.widthBadge{
+    width : 10%;
+}
+
+.badgeFigma {
+    background-color: var(--couleurRose);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.badgeHTML {
+    background-color: #dc4d26;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.badgeCSS {
+    background-color: #0874bd;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.badgeJS {
+    background-color: #68ab18;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.badgeAnimation {
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    border-radius: 30px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.badgeGithub {
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.badgeGithub>p {
+    color: white;
+}
+
+.badgeNotion {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.badgeNotion>p {
+    color: black;
+}
+
+.badgePhotoshop {
+    width: 12%;
+    background-color: #08253c;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.badgePhotoshop>p {
+    color: #37abff;
+}
+
+/* LUMIERE qui suit la souris au survol pour toutes les pages */
+.lumiere {
+    background-color: var(--couleurBleu);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    filter: blur(45px);
+    position: fixed;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* HEADER pour toutes les pages */
 header {
     width: 100%;
-    height: 7vh;
-    padding: 1%;
-    position: fixed;
-    top:0;
+    height: 80px;
+    padding-left: 20px;
+    background-color: var(--couleurBleuFonce);
+    position: sticky;
+    top: 0;
     /*Pour que le header soit toujours pardesssus les autres éléments*/
     z-index: 10;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
     overflow: hidden;
 }
-/* Pour la barre de navigation qui s'ouvre quand on click sur menu burger*/
-#myLinks{
-    /* Pour cacher les liens des pages du menu */
-    display:none;
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    top:50px;
-    right: 1px;
-    /* Si je veux le décoler du bord droit et en même temps du reste */
-    padding: 50px;
-    /* si je veux lui donner une hauteur height: 100vh;*/
-    /*background-color: chartreuse;*/
+
+header>a>img {
+    width: 60px;
 }
-nav ul {
+
+header>nav>ul>li {
+    word-spacing: 10px;
+}
+
+/* Menu Hamburger */
+/* <reset-style> ============================ */
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ============================ */
+/* <style for bg> ======== */
+.background {
+    border-radius: 16px;
+    /*border: 1px solid var(--couleurBleu);*/
+    background: var(--couleurBleuFonce);
+    mix-blend-mode: luminosity;
+    /*box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(15px);*/
+    width: 65px;
+    height: 65px;
+    /** display: flex;**/
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+/* <style for menu__icon> ======== */
+.menu__icon {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    display:block;
+    align-items: end;
+    transition: transform .4s;
 }
-nav ul li {
-    list-style: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    display:block;
+
+.menu__icon span {
+    width: 100%;
+    height: 0.25rem;
+    border-radius: 0.125rem;
+    background-color: var(--couleurBleu);
+    box-shadow: 0 .5px 2px 0 hsla(0, 0%, 0%, .2);
+    transition: width .4s, transform .4s, background-color .4s;
 }
-/* Pour les liens des pages du Menu Burger */
-header a{
-    padding: 14px 16px;
-    font-size: 17px;
-    display: block;
+
+.menu__icon :nth-child(2) {
+    width: 75%;
 }
-.iconBurger{
+
+.menu__icon :nth-child(3) {
+    width: 50%;
+}
+
+.menu__icon:hover {
+    transform: rotate(-90deg);
+}
+
+.menu__icon:hover span {
+    width: .25rem;
+    transform: translateX(-10px);
+    background-color: var(--couleurRose);
+}
+
+/* NavBar Burger  */
+#navBarBurger {
+    background-color: var(--couleurBleuFonce);
+    width: 100%;
+    height: 100vh;
     position: fixed;
-    right: 0;
     top: 0;
+    z-index: 9;
+    padding-top: 80px;
+    /* Pour que la barre de navigation du Burger apparaisse de façon animée */
+    transform: translate(0, 0);
+    transition: transform 0.8s ease;
+}
+
+/* Pour que la barre de navigation du Burger soit cachée cela remplace la classe d-none */
+#navBarBurger.nav-close {
+    transform: translate(100%, 0);
+}
+
+#navBarBurger>ul>li {
+    list-style-type: none;
+    padding-top: 40px;
+}
+
+#navBarBurger>ul>li>a {
+    color: var(--couleurBleu);
+}
+
+/* PAGE HOME   PAGE HOME  PAGE HOME   PAGE HOME   PAGE HOME   PAGE HOME  PAGE HOME   PAGE HOME */
+/* Body page HOME */
+.accrocheAccueil {
+    position: relative;
+    top: 300px;
+}
+
+/*PAGE PROJETS */
+/* PSEUDO CAROUSEL */
+.carouselSlides {
+    position: relative;
+    padding: 60px 30px;
+}
+
+.itemActive {
+    opacity: 1 !important;
+}
+
+.static {
+    position: static !important;
+}
+
+.carouselItem {
+    height: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselItem>img {
+    border-radius: var(--radius);
+    object-fit: cover;
     display: block;
 }
 
+/* Intitulés des projets dans div de droite */
+.intitulesProjets {
+    margin-top: 40px;
+}
+
+.intitulesProjets>a>h3 {
+    color: var(--couleurBleu);
+}
+
+.intitulesProjets>a>h3:hover {
+    color: var(--couleurAntiquewhite);
+}
+
+/*PAGE d'1 PROJET   PAGE d'1 PROJET   PAGE d'1 PROJET   PAGE d'1 PROJET   PAGE d'1 PROJET */
+.presentationProjet {
+    margin-top: 60px;
+}
+
+.infosProjet {
+    padding: 50px;
+}
+
+.infosProjet>h2{
+    color: var(--couleurRose);
+}
+
+.infosGe>div {
+    border-top: 1px solid var(--couleurAliceBlue);
+    padding: 20px 0;
+}
+
+.textePresentation {
+    padding: 20px 0;
+}
+
+.tecLangage {
+    padding: 20px 0;
+    gap: 10px;
+}
+
 /* PAGE CONTACT   PAGE CONTACT    PAGE CONTACT   PAGE CONTACT   PAGE CONTACT   PAGE CONTACT    PAGE CONTACT */
-.contact{background-color: var(--couleurBleuFonce);}
-.contact h2{color: antiquewhite;}
+.contacts {
+    margin-top: 40px;
+    padding-left: 40px;
+}
+
+.contacts>h4 {
+    padding: 40px 0;
+}
+
+.contacts>address {
+    gap: 30px;
+}
+
+.contacts>address>a {
+    width: 100%;
+}
+
+.contacts>address>a>i {
+    padding-right: 10px;
+}
+
+.reseauxSociaux {
+    padding-top: 40px;
+}
+
+/* MEDIA QUERY  Tel */
+@media all and (max-width:885px) {
+
+    /* HEADER */
+    header {
+        padding: 16px 20px;
+    }
+
+    /* Pour faire disparaitre la barre de navigation */
+    .navBar {
+        display: none;
+    }
+
+    /* Pour faire apparaître la barre de navigation et le Menu Burger */
+    #labelBurger {
+        display: block;
+    }
+
+    .background {
+        display: flex;
+
+    }
+
+    /* page HOME */
+    .accrocheAccueil {
+        position: relative;
+        top: 150px;
+        width: 90%;
+    }
+
+    .accrocheAccueil>h2 {
+        font-size: 30px;
+    }
+
+    .brCache {
+        display: block;
+    }
+
+    /* Page PROJETS */
+    .carouselProjet {
+        display: none;
+    }
+
+    .containerIntitules {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .containerIntitules>.intitulesProjets>a {
+        width: 100%;
+    }
+
+    /* PAGE d'1 PROJET */
+    .presentationProjet{
+        flex-direction: column-reverse;
+    }
+    .presentationProjet>div{
+        width: 100%;
+    }
+
+    .widthBadge{
+        width : 25%;
+    }
+
+    /* Page CONTACT */
+    .contacts {
+        width: 90%;
+        margin-top: 80px;
+        padding-left: 0;
+    }
+
+}

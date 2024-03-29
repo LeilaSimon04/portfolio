@@ -6,10 +6,51 @@
     <meta name="description" content="A propos de Leïla SIMON développeuse web Front-end">
     <title>Leïla SIMON : à propos</title>
     <link rel="stylesheet" href="./style.css">
+    <!--Lien avec FontAwesome-->
+    <script src="https://kit.fontawesome.com/8276700845.js" crossorigin="anonymous"></script>
 </head>
-<body>
-
-
+<body class="backgroundMouchete">
+    <header class="flex justifyBetween alignCenter">
+        <a href="./index.html"><img src="./images/Logo-Leila-SIMON-developpeur-web.png" alt="Logo Leïla Simon Développeuse web"></a>
+        <!--Barre de navigation-->
+        <nav class="navBar width40">
+            <ul class="flex justifyBetween">
+                <li><a href="./index.html" title="Leïla Simon Accueil">Accueil</a></li>
+                <li><a href="./projets.html" title="Leïla Simon Projets">Projets</a></li>
+                <li><a href="./apropos.html" title="Leïla Simon À  propos">À propos</a></li>
+                <li><a href="./contact.html" title="Leïla Simon Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- "Hamburger menu" / "Bar icon"-->
+        <div>
+            <div class="background">
+                <button class="menu__icon" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                </button>
+            </div>
+        </div> 
+    </header>
+    <!-- Barre de navigation cachée par défaut qui apparait quand on clique sur le Menu Burger-->
+    <nav id="navBarBurger" class="nav-close padLeft30">
+        <ul>
+            <li><a href="./index.html" title="Leïla Simon | Accueil">Accueil</a></li>
+            <li><a href="./projets.html" title="Leïla Simon | Projets">Projets</a></li>
+            <li><a href="./apropos.html" title="Leïla Simon | A propos">A propos</a></li>
+            <li><a href="./contact.html" title="Leïla Simon | Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Leïla Simon | Développeuse web</h2>
+        <h1>Création de sites internet (portfolio, sites vitrines, landing page, applications web)</h1>
+        <p>Je vous accompagne sur vos projets digitaux</p>
+        <a href="./images/SIMON-Leila_CV.pdf" target="_blank"></a>
+        <div class="lumiere"></div>
+    </main>
+    <!--Liens vers les scripts JS-->
+    <script src="./survolSouris.js"></script>
+    <script src="./menuBurger.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leïla SIMON développeuse web Front-end">
+    <title>Leïla SIMON : Services</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--Lien avec FontAwesome-->
+    <script src="https://kit.fontawesome.com/8276700845.js" crossorigin="anonymous"></script>
+</head>
+<body class="home backgroundMouchete">
+    <header class="flex justifyBetween alignCenter">
+        <a href="./index.html"><img src="./images/Logo-Leila-SIMON-developpeur-web.png" alt="Logo Leïla Simon Développeuse web"></a>
+        <!--Barre de navigation-->
+        <nav class="navBar width40">
+            <ul class="flex justifyBetween">
+                <li><a href="./index.html" title="Leïla Simon | Accueil">Accueil</a></li>
+                <li><a href="./projets.html" title="Leïla Simon | Projets">Projets</a></li>
+                <li><a href="./services.html" title="Leïla Simon | Mes services">Mes services</a></li>
+                <li><a href="./apropos.html" title="Leïla Simon | À propos">À propos</a></li>
+                <li><a href="./contact.html" title="Leïla Simon | Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- "Hamburger menu" / "Bar icon"-->
+        <div>
+            <div class="background">
+                <button class="menu__icon" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                </button>
+            </div>
+        </div> 
+    </header>
+    <!-- Barre de navigation cachée par défaut qui apparait quand on clique sur le Menu Burger-->
+    <nav id="navBarBurger" class="nav-close padLeft30">
+        <ul>
+            <li><a href="./index.html" title="Leïla Simon | Accueil">Accueil</a></li>
+            <li><a href="./projets.html" title="Leïla Simon | Projets">Projets</a></li>
+            <li><a href="./services.html" title="Leïla Simon | Mes services">Mes services</a></li>
+            <li><a href="./apropos.html" title="Leïla Simon | À propos">À propos</a></li>
+            <li><a href="./contact.html" title="Leïla Simon | Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--Pourquoi auriez-vous besoin de moi-->
+        <h2>Pourquoi auriez-vous besoin de moi ?</h2>
+        <p>Que ce soit pour la création ou l'optimisation de votre site internet, ou pour des conseils en référencement, je peux vous aider à améliorer la visibilité de votre démarche ou de votre structure.</p>
+        <div>
+            <!--Développemt-->
+            <div>
+                <h3>Développement</h3>
+                <p></p>
+            </div>
+            <!--Référencememt-->
+            <div>
+                <h3>Référencement</h3>
+                <p></p>
+            </div>
+            <!--Rédaction-->
+            <div>
+                <h3>Rédaction</h3>
+                <p></p>
+            </div>
+        </div>
+        
+    </main>
+     <!--Liens vers les scripts JS-->
+     <script src="./survolSouris.js"></script>
+     <script src="./menuBurger.js"></script>
+     <script src="./app.js"></script>
+</body>
+</html>
